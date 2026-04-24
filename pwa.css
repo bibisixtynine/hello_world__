@@ -1,0 +1,4 @@
+/* PWA : styles minimal pour éviter le flash et améliorer l’installation */
+@media (prefers-reduced-motion: reduce) {
+  .char { animation: none !important; }
+}

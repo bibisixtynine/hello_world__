@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Hello! Fireworks Icon</title>
+  <desc id="desc">Icône sombre premium avec le mot hello! coloré, agité et entouré de feux d’artifice.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04050a"/>
+      <stop offset="52%" stop-color="#0a1022"/>
+      <stop offset="100%" stop-color="#111931"/>
+    </linearGradient>
+
+    <radialGradient id="cyanGlow" cx="0.22" cy="0.18" r="0.72">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="pinkGlow" cx="0.82" cy="0.22" r="0.66">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="goldGlow" cx="0.5" cy="0.88" r="0.7">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="textGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#ffffff" flood-opacity="0.9"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#7dd3fc" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="256" height="256" rx="56" fill="url(#bg)"/>
+  <rect width="256" height="256" rx="56" fill="url(#cyanGlow)"/>
+  <rect width="256" height="256" rx="56" fill="url(#pinkGlow)"/>
+  <rect width="256" height="256" rx="56" fill="url(#goldGlow)"/>
+
+  <g opacity="0.95" filter="url(#softGlow)">
+    <path d="M38 58 L50 42" stroke="#67e8f9" stroke-width="5" stroke-linecap="round"/>
+    <path d="M50 58 L38 42" stroke="#a78bfa" stroke-width="5" stroke-linecap="round"/>
+    <path d="M44 34 V66" stroke="#fde047" stroke-width="5" stroke-linecap="round"/>
+    <path d="M28 50 H60" stroke="#f472b6" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.92" filter="url(#softGlow)">
+    <path d="M198 62 L210 46" stroke="#4ade80" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M210 62 L198 46" stroke="#fb7185" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M204 38 V70" stroke="#22d3ee" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M188 54 H220" stroke="#f59e0b" stroke-width="4.5" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.88" filter="url(#softGlow)">
+    <path d="M190 186 L200 172" stroke="#f9a8d4" stroke-width="4" stroke-linecap="round"/>
+    <path d="M200 186 L190 172" stroke="#67e8f9" stroke-width="4" stroke-linecap="round"/>
+    <path d="M195 166 V192" stroke="#fde68a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M182 179 H208" stroke="#c084fc" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(22 96)" filter="url(#textGlow)">
+    <text x="0" y="66"
+      font-family="Inter, Arial, sans-serif"
+      font-size="48"
+      font-weight="900"
+      fill="#67e8f9"
+      stroke="#ecfeff"
+      stroke-width="6"
+      paint-order="stroke fill"
+      transform="rotate(-8 18 66)">h</text>
+
+    <text x="34" y="71"
+      font-family="Inter, Arial, sans-serif"
+      font-size="52"
+      font-weight="900"
+      fill="#f472b6"
+      stroke="#fff1f2"
+      stroke-width="6"
+      paint-order="stroke fill"
+      transform="rotate(6 54 71)">e</text>
+
+    <text x="72" y="67"
+      font-family="Inter, Arial, sans-serif"
+      font-size="49"
+      font-weight="900"
+      fill="#facc15"
+      stroke="#fff8db"
+      stroke-width="6"
+      paint-order="stroke fill"
+      transform="rotate(-5 88 67)">l</text>
+
+    <text x="100" y="73"
+      font-family="Inter, Arial, sans-serif"
+      font-size="49"
+      font-weight="900"
+      fill="#4ade80"
+      stroke="#f0fdf4"
+      stroke-width="6"
+      paint-order="stroke fill"
+      transform="rotate(7 116 73)">l</text>
+
+    <text x="128" y="68"
+      font-family="Inter, Arial, sans-serif"
+      font-size="53"
+      font-weight="900"
+      fill="#a78bfa"
+      stroke="#faf5ff"
+      stroke-width="6"
+      paint-order="stroke fill"
+      transform="rotate(-4 146 68)">o</text>
+
+    <text x="173" y="63"
+      font-family="Inter, Arial, sans-serif"
+      font-size="60"
+      font-weight="900"
+      fill="#fb7185"
+      stroke="#fff1f2"
+      stroke-width="7"
+      paint-order="stroke fill"
+      transform="rotate(10 186 63)">!</text>
+  </g>
+</svg>
